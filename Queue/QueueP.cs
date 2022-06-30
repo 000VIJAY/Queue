@@ -29,6 +29,17 @@ namespace Queue
             }
 
         }
+        public void dequeue()
+        {
+           
+           if (head == null)
+            {
+                Console.WriteLine("queue is empty ");
+                return;
+            }
+            Console.WriteLine("value deququed : " +head.data);
+            head = head.next;
+        }
         public void Display()
         {
             Node nodeOne = this.head;
